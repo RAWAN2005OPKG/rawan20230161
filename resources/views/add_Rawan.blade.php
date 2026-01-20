@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>منصة مشاريع التخرج</title>
+    <title> مشاريع التخرج</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
@@ -61,41 +61,40 @@
 
         .form-group {
             position: relative;
-            margin-bottom: 2rem; /* قللنا المسافة قليلاً */
+            margin-bottom: 2rem;
             animation-delay: calc(0.3s + var(--i) * 0.1s);
         }
 
-        /* --- التعديل الرئيسي هنا --- */
         .form-input {
             width: 100%;
             padding: 12px 15px;
             font-size: 1.1rem;
-            color: #ffffff; /* النص باللون الأبيض */
-            background-color: rgba(0, 0, 0, 0.2); /* خلفية سوداء شفافة */
-            border: 1px solid var(--text-light); /* حدود رمادية خفيفة */
+            color: #ffffff;
+            background-color: rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--text-light);
             border-radius: 6px;
             outline: none;
             position: relative;
             z-index: 1;
-            box-sizing: border-box; /* لضمان حساب الحجم بشكل صحيح */
+            box-sizing: border-box;
             transition: all 0.3s ease;
         }
 
         .form-label {
             position: absolute;
-            top: -12px; /* تم رفع العنوان بشكل دائم */
+            top: -12px;
             right: 12px;
             font-size: 0.9rem;
             color: var(--text-light);
-            background-color: var(--container-bg); /* لإخفاء الخط الذي يمر من تحته */
+            background-color: var(--container-bg);
             padding: 0 5px;
             z-index: 2;
         }
 
         .form-input:focus {
-            border-color: var(--primary-color); /* حدود حمراء عند التركيز */
+            border-color: var(--primary-color);
             background-color: rgba(0, 0, 0, 0.3);
-            box-shadow: 0 0 10px rgba(255, 23, 68, 0.3); /* توهج أحمر خفيف */
+            box-shadow: 0 0 10px rgba(255, 23, 68, 0.3);
         }
 
         textarea.form-input { resize: none; min-height: 120px; }

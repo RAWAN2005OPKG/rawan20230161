@@ -30,7 +30,7 @@ class ProjectController extends Controller
         // إنشاء سجل جديد في قاعدة البيانات
         ProjectRawan::create($validatedData);
 
-        // إعادة التوجيه لصفحة الفورم مع رسالة نجاح
+        // إعادة التوجيه لصفحة الفورم
         return redirect('/add-project')->with('success', 'تمت إضافة المشروع بنجاح!');
     }
 }
